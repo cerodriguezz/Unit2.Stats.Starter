@@ -34,7 +34,7 @@ console.log(`The odd numbers you gave are ${getOdds(numbers)}.`);
 
 /**
  * @param {number["1","2","3","4","5"]} numbers an array of integers
- * @returns {number} the length of the array
+ * @returns {"5"} the length of the array
  */
 function getLength(numbers) {
   return numbers.length
@@ -42,8 +42,8 @@ function getLength(numbers) {
 }
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number} the sum of the numbers
+ * @param {number["1","2","3","4","5"]} numbers an array of integers
+ * @returns {"15"} the sum of the numbers
  */
 function getSum(numbers) {
   let sum = 0
@@ -54,8 +54,8 @@ function getSum(numbers) {
 }
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number} the mean of the numbers
+ * @param {number["1","2","3","4","5"]} numbers an array of integers
+ * @returns {"3"} the mean of the numbers
  */
 function getMean(numbers) {
   if (numbers.length === 0) {
@@ -70,8 +70,8 @@ function getMean(numbers) {
 }
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number} the smallest of the numbers
+ * @param {number["1","2","3","4","5"]} numbers an array of integers
+ * @returns {number "0"} the smallest of the numbers
  */
 function getMin(numbers) {
   if (numbers.length === 0) {
@@ -89,8 +89,8 @@ function getMin(numbers) {
 }
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number} the largest of the numbers
+ * @param {number["1","2","3","4","5"]} numbers an array of integers
+ * @returns {number"5"} the largest of the numbers
  */
 function getMax(numbers) {
   if (numbers.length === 0)
@@ -111,8 +111,14 @@ for (let i = 1; i < numbers.length; i++) {
  * @returns {number} the range of the numbers (max - min)
  */
 function getRange(numbers) {
-  // TODO
+  const min = getmin (numbers);
+  const max = getmax (numbers);
+  if (min === undefined || max === undefined);
+  return undefined;
 }
+return min - max;
+  // TODO
+
 
 /**
  * @param {number[]} numbers an array of integers
