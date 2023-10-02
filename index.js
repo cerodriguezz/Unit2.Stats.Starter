@@ -33,7 +33,7 @@ console.log(`The odd numbers you gave are ${getOdds(numbers)}.`);
 // Complete the functions below to make the program work!
 
 /**
- * @param {number[]} numbers an array of integers
+ * @param {number["1","2","3","4","5"]} numbers an array of integers
  * @returns {number} the length of the array
  */
 function getLength(numbers) {
@@ -58,6 +58,14 @@ function getSum(numbers) {
  * @returns {number} the mean of the numbers
  */
 function getMean(numbers) {
+  if (numbers.length === 0) {
+    return 0;
+  }
+  let sum = 0;
+  for(let i=0; i< numbers.length; i++) {
+    sum+= numbers [i];   
+  }
+  return sum/numbers.length;
   // TODO
 }
 
@@ -66,6 +74,17 @@ function getMean(numbers) {
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
+  if (numbers.length === 0) {
+  return undefined;
+  }
+  let min = numbers [0];
+  for (let i = 1; i< numbers.length; i++) {
+    if (numbers[i]<min) {
+      min = numbers[i];
+    }
+    return min;
+  }
+  ]
   // TODO
 }
 
@@ -74,6 +93,8 @@ function getMin(numbers) {
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
+  if (numbers.length === 0)
+  return undefined;
   // TODO
 }
 
