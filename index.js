@@ -104,7 +104,7 @@ for (let i = 1; i < numbers.length; i++) {
   return max;
 }
   // TODO
-}
+
 
 /**
  * @param {number[]} numbers an array of integers
