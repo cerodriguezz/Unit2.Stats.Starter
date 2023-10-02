@@ -125,6 +125,13 @@ return min - max;
  * @returns {number["2","4"]} the even numbers in the array
  */
 function getEvens(numbers) {
+  const evennumbers = ["2","4"]
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2==0) {
+      evennumbers.push(numbers[i]);
+    }
+  }
+  return evennumbers;
   // TODO
 }
 
@@ -133,5 +140,11 @@ function getEvens(numbers) {
  * @returns {number["1","3","5"]} the odd numbers in the array
  */
 function getOdds(numbers) {
+  for (let i = 0; i <numbers.length; i++) {
+    if (numbers[i] % 2 != 0) {
+      oddnumbers.push(numbers[i]);
+    }
+  }
+  return oddnumbers;
   // TODO
 }
