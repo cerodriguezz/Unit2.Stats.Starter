@@ -107,8 +107,8 @@ for (let i = 1; i < numbers.length; i++) {
 
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number} the range of the numbers (max - min)
+ * @param {number["1","2","3","4","5"]} numbers an array of integers
+ * @returns {number"5","1"} the range of the numbers (max - min)
  */
 function getRange(numbers) {
   const min = getmin (numbers);
@@ -121,16 +121,16 @@ return min - max;
 
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number[]} the even numbers in the array
+ * @param {number["1","2","3","4","5"]} numbers an array of integers
+ * @returns {number["2","4"]} the even numbers in the array
  */
 function getEvens(numbers) {
   // TODO
 }
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number[]} the odd numbers in the array
+ * @param {number["1","2","3","4","5"]} numbers an array of integers
+ * @returns {number["1","3","5"]} the odd numbers in the array
  */
 function getOdds(numbers) {
   // TODO
