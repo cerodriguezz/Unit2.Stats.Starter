@@ -84,7 +84,7 @@ function getMin(numbers) {
     }
     return min;
   }
-  ]
+  
   // TODO
 }
 
